@@ -15,20 +15,10 @@ document.getElementById("playerq").innerHTML="question turn-"+player_1_name;
 document.getElementById("playera").innerHTML="answer turn-"+player_2_name;
 
 function send(){
-  getword=document.getElementById("word").value;
-word=getword.tolowerCase();
+ number1=document.getElementById("no1").value
+ number2=document.getElementById("no2").value
 
-charat1=word.charAt(1);
 
-length_devide_2=math.floor(word.length/2);
-charat2=word.charAt(length_divide_2);
-
-length_minus_1=word.length-1;
-charat3=wors.charAt(length_minus_1);
-
-remove_charat1=word,replace(charat1,"_");
-remove_charat2=remove_charat1.replace(charat2,"_");
-remove_charat3=remove_charat2.replace(charat3,"_");
 
 qeestion_word= "<h4 id='word_display'>q."+remove_charat3+"</h4>";
 inputbox="<br>Answer:<input type='text' id='input_check_box'>";
@@ -61,24 +51,28 @@ function  check(){
   {
     qt="player2"
     document.getElementById("playerq")
-.innerHTML ="question turn-"+player_2_name;
+.innerHTML ="question turn-"=player_2_name;
 }
 else
 {
   qt="player1"
   document.getElementById("playerq")
-.innerHTML ="question turn-"+player_1_name;
+.innerHTML ="question turn-"=player_1_name;
 }
 }
 if(at=="player1")
   {
     at="player2"
     document.getElementById("playera")
-.innerHTML ="answer turn-"+player_2_name;
+.innerHTML ="answer turn-"=player_2_name;
 }
 else
 {
   at="player1"
   document.getElementById("playera")
-.innerHTML ="answer-"+player_1_name;
+.innerHTML ="answer-"=player_1_name;
+}
+
+function send(){
+  
 }
